@@ -1,0 +1,1004 @@
+/* =========================================
+   MINECRAFT WIKI
+   Main stylesheet
+========================================= */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #151a16;
+    color: #e8eee9;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- TOP BAR ---------- */
+
+.topbar {
+
+    height: 72px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #263c27,
+            #1c2d1e
+        );
+
+    border-bottom: 4px solid #101510;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 0 25px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.5);
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 21px;
+
+    font-weight: 900;
+
+    white-space: nowrap;
+
+}
+
+
+.logo-icon {
+
+    font-size: 29px;
+
+}
+
+
+/* ---------- SEARCH ---------- */
+
+.search-container {
+
+    display: flex;
+
+    margin-left: auto;
+
+    max-width: 450px;
+
+    width: 100%;
+
+}
+
+
+.search-container input {
+
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    outline: none;
+
+    background: #101510;
+
+    color: white;
+
+    border-radius:
+        5px 0 0 5px;
+
+    font-size: 15px;
+
+}
+
+
+.search-container button {
+
+    width: 50px;
+
+    border: none;
+
+    background: #4caf50;
+
+    cursor: pointer;
+
+    border-radius:
+        0 5px 5px 0;
+
+    font-size: 18px;
+
+}
+
+
+.search-container button:hover {
+
+    background: #65c96a;
+
+}
+
+
+/* ---------- LAYOUT ---------- */
+
+.page-layout {
+
+    display: flex;
+
+    min-height: calc(100vh - 72px);
+
+}
+
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar {
+
+    width: 250px;
+
+    background: #1c231e;
+
+    border-right: 2px solid #303a32;
+
+    flex-shrink: 0;
+
+}
+
+
+.sidebar nav {
+
+    padding: 25px 15px;
+
+    position: sticky;
+
+    top: 72px;
+
+}
+
+
+.sidebar h3 {
+
+    color: #8bc34a;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    margin:
+
+        18px 10px
+
+        8px;
+
+}
+
+
+.sidebar h3:first-child {
+
+    margin-top: 0;
+
+}
+
+
+.sidebar a {
+
+    display: block;
+
+    padding: 9px 12px;
+
+    margin-bottom: 3px;
+
+    color: #cfd8d1;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition:
+        background .2s,
+        color .2s;
+
+}
+
+
+.sidebar a:hover {
+
+    background: #304733;
+
+    color: white;
+
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.content {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 40px;
+
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+
+    min-height: 380px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #243f25,
+            #315e34
+        );
+
+    border: 2px solid #48734b;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 50px;
+
+}
+
+
+.hero-text {
+
+    padding: 60px;
+
+    max-width: 720px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.badge {
+
+    display: inline-block;
+
+    background: #8bc34a;
+
+    color: #142015;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(40px, 6vw, 68px);
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero p {
+
+    font-size: 19px;
+
+    color: #d7e5d9;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ---------- BLOCK DECORATION ---------- */
+
+.hero-block {
+
+    position: absolute;
+
+    right: -40px;
+
+    bottom: -80px;
+
+    width: 330px;
+
+    height: 330px;
+
+    transform:
+        rotate(-8deg);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.4);
+
+}
+
+
+.grass-top {
+
+    height: 28%;
+
+    background:
+
+        repeating-linear-gradient(
+            90deg,
+            #4c9b35 0 25px,
+            #3f852c 25px 50px
+        );
+
+    border: 5px solid #376f28;
+
+}
+
+
+.dirt {
+
+    height: 72%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #8b572f 0 6px,
+            transparent 7px
+        ),
+
+        #6e4429;
+
+    background-size: 35px 35px;
+
+    border: 5px solid #57351f;
+
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.button {
+
+    display: inline-block;
+
+    background: #8bc34a;
+
+    color: #142015;
+
+    padding: 13px 22px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 4px 0 #557d2e;
+
+    transition:
+        transform .1s,
+        background .2s;
+
+}
+
+
+.button:hover {
+
+    background: #a4df60;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+}
+
+
+.intro {
+
+    color: #b9c4bb;
+
+    max-width: 850px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* ---------- CARDS ---------- */
+
+.card-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap: 18px;
+
+    margin-bottom: 50px;
+
+}
+
+
+.card {
+
+    background: #202921;
+
+    border: 1px solid #344136;
+
+    border-radius: 8px;
+
+    padding: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition:
+        transform .2s,
+        border-color .2s,
+        background .2s;
+
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-5px);
+
+    background: #273329;
+
+    border-color: #72a43f;
+
+}
+
+
+.card-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.card p {
+
+    color: #aeb9b0;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card span {
+
+    color: #8bc34a;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ---------- TIPS ---------- */
+
+.tips {
+
+    background: #202921;
+
+    border-left:
+        5px solid #8bc34a;
+
+    padding: 25px 30px;
+
+    margin-top: 20px;
+
+    margin-bottom: 50px;
+
+    border-radius: 5px;
+
+}
+
+
+.tips ul {
+
+    list-style-position: inside;
+
+    color: #c3ccc5;
+
+}
+
+
+.tips li {
+
+    margin: 7px 0;
+
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+
+    border-top: 1px solid #344136;
+
+    padding: 30px 0;
+
+    color: #778279;
+
+    font-size: 13px;
+
+    text-align: center;
+
+}
+
+
+/* ---------- MOBILE MENU ---------- */
+
+.mobile-menu {
+
+    display: none;
+
+    background: transparent;
+
+    color: white;
+
+    border: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* ---------- ARTICLE PAGES ---------- */
+
+.article {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+.article-header {
+
+    margin-bottom: 35px;
+
+}
+
+
+.article-header .category {
+
+    color: #8bc34a;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.article h1 {
+
+    font-size:
+        clamp(35px, 6vw, 55px);
+
+    line-height: 1.1;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.article .lead {
+
+    font-size: 19px;
+
+    color: #aeb9b0;
+
+}
+
+
+.article h2 {
+
+    margin-top: 45px;
+
+    font-size: 28px;
+
+}
+
+
+.article h3 {
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.article p {
+
+    color: #c7d0c9;
+
+    margin-bottom: 18px;
+
+}
+
+
+.article ul,
+.article ol {
+
+    margin:
+
+        15px 0
+
+        25px 30px;
+
+    color: #c7d0c9;
+
+}
+
+
+.article li {
+
+    margin-bottom: 8px;
+
+}
+
+
+.info-box {
+
+    background: #202921;
+
+    border-left: 5px solid #8bc34a;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    margin: 25px 0;
+
+}
+
+
+.warning-box {
+
+    background: #332a1d;
+
+    border-left: 5px solid #e7a83b;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    margin: 25px 0;
+
+}
+
+
+.tip-box {
+
+    background: #1d2d33;
+
+    border-left: 5px solid #46a9c7;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    margin: 25px 0;
+
+}
+
+
+.article table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 25px 0;
+
+    background: #202921;
+
+}
+
+
+.article th {
+
+    background: #304733;
+
+    text-align: left;
+
+}
+
+
+.article th,
+.article td {
+
+    padding: 12px;
+
+    border: 1px solid #3b493d;
+
+}
+
+
+.article code {
+
+    background: #101510;
+
+    padding: 3px 6px;
+
+    border-radius: 3px;
+
+    color: #a4df60;
+
+}
+
+
+/* ---------- SEARCH RESULTS ---------- */
+
+.search-results {
+
+    position: fixed;
+
+    top: 72px;
+
+    right: 25px;
+
+    width: 400px;
+
+    max-width: calc(100% - 40px);
+
+    background: #202921;
+
+    border: 1px solid #4b5d4e;
+
+    border-radius: 7px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.5);
+
+    z-index: 2000;
+
+    display: none;
+
+}
+
+
+.search-result {
+
+    display: block;
+
+    padding: 15px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid #344136;
+
+}
+
+
+.search-result:hover {
+
+    background: #304733;
+
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 800px) {
+
+    .topbar {
+
+        padding: 0 15px;
+
+        gap: 10px;
+
+    }
+
+
+    .logo {
+
+        font-size: 17px;
+
+    }
+
+
+    .search-container {
+
+        max-width: none;
+
+    }
+
+
+    .sidebar {
+
+        position: fixed;
+
+        left: -260px;
+
+        top: 72px;
+
+        bottom: 0;
+
+        z-index: 900;
+
+        transition: left .25s;
+
+        overflow-y: auto;
+
+    }
+
+
+    .sidebar.open {
+
+        left: 0;
+
+    }
+
+
+    .mobile-menu {
+
+        display: block;
+
+        order: -1;
+
+    }
+
+
+    .content {
+
+        padding: 20px;
+
+    }
+
+
+    .hero {
+
+        min-height: 500px;
+
+    }
+
+
+    .hero-text {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .hero-block {
+
+        opacity: .25;
+
+        right: -100px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .search-container input {
+
+        min-width: 0;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+}
