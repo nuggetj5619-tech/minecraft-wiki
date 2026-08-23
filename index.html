@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minecraft Wiki - How to Play Minecraft</title>
+
+    <meta
+        name="description"
+        content="A beginner-friendly Minecraft wiki explaining survival, crafting, mining, combat, farming, the Nether, and the End."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        <span class="logo-icon">⛏️</span>
+        <span>Minecraft Wiki</span>
+    </div>
+
+    <button class="mobile-menu" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="search-container">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search the wiki..."
+            autocomplete="off"
+        >
+        <button onclick="searchWiki()">🔎</button>
+    </div>
+
+</header>
+
+
+<div class="page-layout">
+
+    <aside class="sidebar" id="sidebar">
+
+        <nav>
+
+            <h3>Getting Started</h3>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="articles/getting-started.html">
+                🌱 Getting Started
+            </a>
+
+            <a href="articles/first-day.html">
+                🌅 Your First Day
+            </a>
+
+            <a href="articles/crafting.html">
+                🛠️ Crafting
+            </a>
+
+
+            <h3>Survival</h3>
+
+            <a href="articles/mining.html">
+                ⛏️ Mining
+            </a>
+
+            <a href="articles/combat.html">
+                ⚔️ Combat
+            </a>
+
+            <a href="articles/farming.html">
+                🌾 Farming
+            </a>
+
+
+            <h3>Dimensions</h3>
+
+            <a href="articles/nether.html">
+                🔥 The Nether
+            </a>
+
+            <a href="articles/end.html">
+                🐉 The End
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="content">
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <div class="badge">
+                    BEGINNER FRIENDLY
+                </div>
+
+                <h1>
+                    How to Play Minecraft
+                </h1>
+
+                <p>
+                    Your guide to surviving, building, exploring,
+                    fighting and becoming a Minecraft expert.
+                </p>
+
+                <a
+                    class="button"
+                    href="articles/getting-started.html"
+                >
+                    Start Learning →
+                </a>
+
+            </div>
+
+            <div class="hero-block">
+                <div class="grass-top"></div>
+                <div class="dirt"></div>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Welcome to the Wiki</h2>
+
+            <p class="intro">
+
+                Minecraft is a sandbox game where you can explore
+                enormous worlds, collect resources, build structures,
+                fight monsters and create almost anything you can imagine.
+
+                This wiki is designed to teach new players how Minecraft
+                works from the very beginning.
+
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Start Here</h2>
+
+            <div class="card-grid">
+
+
+                <a
+                    class="card"
+                    href="articles/getting-started.html"
+                >
+
+                    <div class="card-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Getting Started
+                    </h3>
+
+                    <p>
+                        Learn the basics and understand what
+                        you should do when you first enter a world.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/first-day.html"
+                >
+
+                    <div class="card-icon">
+                        🌅
+                    </div>
+
+                    <h3>
+                        Your First Day
+                    </h3>
+
+                    <p>
+                        Learn how to survive your first night
+                        and build your first shelter.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/crafting.html"
+                >
+
+                    <div class="card-icon">
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Crafting
+                    </h3>
+
+                    <p>
+                        Learn how crafting works and how to
+                        make your most important tools.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/mining.html"
+                >
+
+                    <div class="card-icon">
+                        ⛏️
+                    </div>
+
+                    <h3>
+                        Mining
+                    </h3>
+
+                    <p>
+                        Find coal, iron, diamonds and other
+                        valuable resources.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/combat.html"
+                >
+
+                    <div class="card-icon">
+                        ⚔️
+                    </div>
+
+                    <h3>
+                        Combat
+                    </h3>
+
+                    <p>
+                        Learn how to fight hostile mobs and
+                        protect yourself.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/farming.html"
+                >
+
+                    <div class="card-icon">
+                        🌾
+                    </div>
+
+                    <h3>
+                        Farming
+                    </h3>
+
+                    <p>
+                        Grow crops and create renewable sources
+                        of food.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/nether.html"
+                >
+
+                    <div class="card-icon">
+                        🔥
+                    </div>
+
+                    <h3>
+                        The Nether
+                    </h3>
+
+                    <p>
+                        Prepare for one of Minecraft's most
+                        dangerous dimensions.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="card"
+                    href="articles/end.html"
+                >
+
+                    <div class="card-icon">
+                        🐉
+                    </div>
+
+                    <h3>
+                        The End
+                    </h3>
+
+                    <p>
+                        Learn how to reach the End and
+                        prepare to fight the Ender Dragon.
+                    </p>
+
+                    <span>
+                        Read guide →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="tips">
+
+            <h2>⭐ Quick Tips</h2>
+
+            <ul>
+
+                <li>
+                    Never dig straight down.
+                </li>
+
+                <li>
+                    Keep food with you when exploring.
+                </li>
+
+                <li>
+                    Make a bed as soon as possible.
+                </li>
+
+                <li>
+                    Carry torches when mining.
+                </li>
+
+                <li>
+                    Keep valuable items in a safe place.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                Minecraft Wiki • Fan-made educational website
+            </p>
+
+            <p>
+                Not affiliated with Mojang or Microsoft.
+            </p>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
